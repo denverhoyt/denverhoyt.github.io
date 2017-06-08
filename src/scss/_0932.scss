@@ -1,0 +1,77 @@
+/* Format all Inline elements to a width */
+/* start with container */
+/* Use a standard gutter of 140 gutter on each side */
+header {
+	text-align: left;
+
+	div {
+		p {}
+	}
+}
+
+article,
+footer,
+main {}
+
+a {}
+
+blockquote {
+	border-left: 10px solid $grey;
+	padding-left: 16px;
+	margin-left: -28px;
+}
+
+figure {
+	text-align: center;
+}
+
+figure.float-left {
+	float: left;
+	margin: .5em 1.5em 0 0;
+	max-width: 19em;
+}
+
+figure.float-right {
+	float: right;
+	margin: .5em 0 0 1.5em;
+	border: 0;
+	max-width: 19em;
+}
+
+figure.pull-left {
+	float: left;
+	margin: .5em 1.5em 0 -140px;
+	border: 0;
+	max-width: 26em;
+}
+
+figure.pull-right {
+	float: right;
+	margin: .5em -140px 0 1.5em;
+	border: 0;
+	max-width: 26em;
+}
+
+blockquote.pull-both,
+figure.pull-both {
+	margin: .5em -140px 0;
+	border: 0;
+	text-align: center;
+}
+
+code {
+	background-color: lighten($grey, 15%);
+	padding: 0 .3em;
+}
+
+pre {
+	margin: 2em -140px;
+	overflow: scroll;
+	background-color: $black;
+
+	code {
+		font-size: 100%;
+		color: $white;
+		background-color: transparent;
+	}
+}

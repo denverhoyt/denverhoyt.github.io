@@ -1,0 +1,112 @@
+/* Format all Inline elements to a width */
+/* start with container */
+/* Use a standard gutter of 140 gutter on each side */
+header {
+	text-align: center;
+	padding: 9em 1.2em;
+	color: $white;
+
+	div {
+		max-width: 37em;
+		margin: 0 auto;
+
+		span {
+			color: darken($grey, 12%);
+			padding-bottom: 1em;
+			border-bottom: 5px solid rgba(255,255,255,.3);
+		}
+
+		p {
+			margin-top: 1em;
+			color: $grey;
+		}
+	}
+}
+
+article,
+footer,
+main {
+	color: $black;
+	margin: 1.5em auto;
+	max-width: 37em;
+	padding: 0 1.2em;
+}
+
+a {
+	color: $blue;
+}
+
+blockquote {
+	border-left: 10px solid $grey;
+	padding-left: 16px;
+	margin-left: -20px;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	padding: 0 1.5em;
+}
+
+.float-left {
+	margin: .5em auto;
+}
+
+.float-right {
+	float: right;
+	margin: .5em 0 0 1.5em;
+}
+
+.pull-left {
+	margin: .5em 0;
+}
+
+.pull-right {
+	float: right;
+	margin: .5em -140px 0 1.5em;
+}
+
+.pull-both {
+	// margin: .5em -140px 0;
+	margin: .5em -1.2em 0;
+	border: 0;
+	text-align: center;
+}
+
+code {
+	background-color: lighten($grey, 15%);
+	padding: 0 .3em;
+}
+
+pre {
+	overflow: scroll;
+	background-color: $black;
+	margin: 1.5em -1.3em 1em;
+
+	code {
+		color: $white;
+		background-color: transparent;
+	}
+}
+
+footer {
+	border-top: 5px solid $grey;
+	padding-top: 2em;
+	margin: 2em auto 4em;
+}
+// List page
+
+main {
+	ol {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			h2 {
+				a {}
+			}
+		}
+	}
+}

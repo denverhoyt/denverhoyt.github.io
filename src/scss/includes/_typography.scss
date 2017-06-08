@@ -1,0 +1,100 @@
+body {
+	font-family: 'Lora-Regular', Georgia, 'Times New Roman', Times, serif;
+	font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'IstokWeb-Bold', Arial, 'Lucida Grande', sans-serif;
+	clear: both;
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1.255em;
+	padding-bottom: 0;
+	padding-top: .31em;
+}
+
+h2 {
+	font-size: 1.8em;
+	line-height: 1.33em;
+	padding: .7em 0 .06em;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 1.4em;
+	line-height: 1.57em;
+	padding-top: 1.57em;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 1em;
+	line-height: 1.57em;
+	padding-top: 1.57em;
+	font-weight: bold;
+}
+
+dl,
+ol,
+p,
+ul {
+	font-size: 1em;
+	line-height: 1.9em;
+	padding-bottom: 1.2em;
+	padding-top: .47em;
+	/* 	padding-top: 1.97em; */
+}
+
+blockquote {
+	margin: 1.5em 0 2.5em;
+	font-family: 'Lora-Italic', Georgia, 'Times New Roman', Times, serif;
+
+	p:first-child {
+		padding-top: 0;
+	}
+
+	p:last-child {
+		padding-bottom: 0;
+	}
+}
+
+figure {
+	padding: .5em 0;
+}
+
+figcaption {
+	font-size: .85em;
+}
+
+.tldr,
+em,
+figcaption {
+	font-family: 'Lora-Italic', Georgia, 'Times New Roman', Times, serif;
+}
+
+strong {
+	font-family: 'Lora-Bold', Georgia, 'Times New Roman', Times, serif;
+}
+
+.tldr {
+	font-size: 1.5em;
+	padding: .5em 0;
+}
+
+pre {
+	margin: 1.5em 0 1em;
+	padding: 2em;
+	line-height: 1.3em;
+
+	code {
+		font-size: 80%;
+	}
+}

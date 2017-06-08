@@ -1,0 +1,35 @@
+{
+    "name": "hoytdenver.github.io",
+    "description": "Personal website of Hoyt Denver, Writer",
+    "version": "0.0.3",
+    "main": "_site/index.html",
+    "repository": "https://github.com/HoytDenver/puddletowndesign.github.io",
+    "author": "Hoyt <hoytdenver@gmail.com>",
+    "license": "COPYRIGHT",
+    "devDependencies": {
+        "babel-core": "latest",
+        "babel-loader": "latest",
+        "babel-preset-es2015": "latest",
+        "babelify": "latest",
+        "browserify": "^14.4.0",
+        "chai": "latest",
+        "child_process": "latest",
+        "gulp": "latest",
+        "gulp-autoprefixer": "latest",
+        "gulp-connect": "latest",
+        "gulp-gh-pages": "latest",
+        "gulp-htmlmin": "latest",
+        "gulp-imagemin": "latest",
+        "gulp-sass": "latest",
+        "gulp-sourcemaps": "latest",
+        "gulp-util": "latest",
+        "mocha": "latest",
+        "rimraf": "latest",
+        "vinyl-source-stream": "latest"
+    },
+    "dependencies": {
+        "gulp-rename": "^1.2.2",
+        "gulp-uglify": "^3.0.0",
+        "vinyl-buffer": "^1.0.0"
+    }
+}

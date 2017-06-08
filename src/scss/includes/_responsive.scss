@@ -1,0 +1,16 @@
+/* ------------------------------------------------------
+		Responive Control
+------------------------------------------------------ */
+@import '../0000';
+@media (min-width: 631px) {
+	 @import'../0631';
+}
+@media (min-width: 932px) {
+	 @import'../0932';
+}
+@media (min-width: 1100px) {
+	 @import'../1100';
+}
+@media (min-width: 1300px) {
+	 @import'../1300';
+}

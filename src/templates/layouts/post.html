@@ -1,0 +1,29 @@
+{% include base.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{{base}}/style.css" rel="stylesheet">
+<style>
+	body > header {
+		background: url(../../images/articles/{{ page.title | slugify }}/{{page.masthead}}) center center;
+	}
+</style>
+<title>{{ page.title | smartify }}</title>
+</head>
+<body>
+	<header>
+		<div>
+			<h1>{{ page.title | smartify }}</h1>
+			<span><em>written by: {{page.author}}</em> on <time>{{page.date | date: '%B %d, %Y' }}</time></span>
+			<p class="tldr">{{ page.description | smartify }}</p>
+		</div>
+	</header>
+
+	<article>
+
+		{{content}}
+	</article>
+
+{% include footer.html %}
