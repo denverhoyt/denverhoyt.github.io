@@ -7,10 +7,10 @@ description: Denver Hoyt is a freelance writer for hire
 -   ### Blog Posts
     -   15¢ per word
     -   800 - 1400 words
-    -   1 hour of topic research included
+    -   1 hour of research included
 -   ### Social Media
-    -   Starting at $5 a post, Billed Monthly in Packages of at least 10
     -   7 - 130 words per post
+    -   Starting at $5 a post. minimum 10 posts.
 -   ### Marketing Video Scripts
     -   $25 per Estimated Video Minute
     -   1 Video Minute = 120 Words on Average
