@@ -25,14 +25,12 @@ github:
 layouts_dir:  src/templates/layouts
 includes_dir: src/templates/includes
 
-# include:
-
-
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
   - src
+
 
 # Exclude items from sitemap
 sitemap: false

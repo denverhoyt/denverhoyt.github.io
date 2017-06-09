@@ -5,15 +5,33 @@ body {
 	font-size: 110%;
 }
 
-header {
-	div {
-		p {}
+.home {
+	/* Services */
+	main > ul {
+
+		text-align: center;
+
+		> li {
+			vertical-align: top;
+			text-align: left;
+			display: inline-block;
+			width: 40%;
+
+			h3 {
+				font-size: 1.3em;
+				border-bottom: .3em solid $grey;
+			}
+
+			ul {
+				li {}
+			}
+
+			&:nth-child(odd) {
+				padding-right: 3em;
+			}
+		}
 	}
 }
-
-article,
-footer,
-main {}
 
 blockquote {}
 

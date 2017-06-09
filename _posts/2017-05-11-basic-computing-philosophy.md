@@ -2,7 +2,7 @@
 layout: post
 title:  "Basic Computing Philosophy"
 description: "Understanding filesystems and processing concepts."
-author: Brent Schneider
+author: Denver Hoyt
 date:   2017-05-12 00:17:55 -0500
 categories: Typography
 masthead: 'masthead.jpg'

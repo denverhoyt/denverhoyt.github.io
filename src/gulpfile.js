@@ -1,19 +1,17 @@
+/* global gulp, connect, browserify  */
+
 /**
  * Gulp Modules
  */
-
-/* global gulp, connect, browserify  */
-
 // general
 const gulp = require('gulp')
 const gutil = require('gulp-util')
 const connect = require('gulp-connect')
 const rename = require('gulp-rename')
-
+const cp = require('child_process')
 // sass
 const sass = require('gulp-sass')
 const autoprefixer = require('gulp-autoprefixer')
-
 // javascript
 const uglify = require('gulp-uglify')
 const babelify = require('babelify')
@@ -25,7 +23,7 @@ const buffer = require('vinyl-buffer')
  * Sources
  */
 
-const sassFile = ['scss/style.scss']
+const sassFile = ['./scss/**/*.scss']
 const htmlFiles = ['./templates/**/*.html']
 const jsFile = ['./js/app.js']
 const mdFiles = ['../**/*.md']
@@ -42,26 +40,34 @@ gulp.task('server', () => {
 })
 
 /**
- * Jekyll Build
- */
-gulp.task('build', () => {
-
-})
-
-/**
  * Deafult
  */
-// gulp.task('default', ['js', 'sass', 'watch', 'server'])
+gulp.task('default', ['js', 'sass', 'build', 'watch', 'server'])
 
 /**
  * Dev Watchers
  */
 gulp.task('watch', () => {
   // make sure to watch _includes, _layouts
-  gulp.watch([jsFile], ['js'])
-  gulp.watch(htmlFiles, ['html'])
-  gulp.watch(sassFile, ['sass'])
-  gulp.watch(mdFiles, )
+  gulp.watch([jsFile], ['js', 'reload'])
+  gulp.watch(sassFile, ['sass', 'reload'])
+  gulp.watch(htmlFiles, ['reload'])
+  gulp.watch(mdFiles, ['reload'])
+})
+
+/**
+ * Reload Gulp Connect
+ */
+gulp.task('reload', ['build'], function () {
+  gulp.src(sassFile)
+    .pipe(connect.reload())
+})
+
+/**
+ * Jekyll Build
+ */
+gulp.task('build', () => {
+  cp.spawn('npm', ['start'])
 })
 
 /**
@@ -81,6 +87,7 @@ gulp.task('js', () => {
     .pipe(uglify())
     .pipe(rename('bundle.js'))
     .pipe(gulp.dest(outputDir))
+    .pipe(connect.reload())
 })
 
 /**
@@ -99,5 +106,5 @@ gulp.task('sass', () => {
     }))
     // .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(outputDir))
-  // .pipe(connect.reload())
+    .pipe(connect.reload())
 })

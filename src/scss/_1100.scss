@@ -2,14 +2,32 @@ body {
 	font-size: 120%;
 }
 
-header {
-	div {
-		max-width: 42.5em;
-	}
-}
-
 article,
 footer,
 main {
 	max-width: 42.5em;
+}
+
+.home {
+	/* Services */
+	main > ul {
+		> li {
+			h3 {}
+
+			ul {
+				li {}
+			}
+
+			&:nth-child(odd) {
+				}
+		}
+	}
+}
+
+.post {
+	header {
+		div {
+			max-width: 42.5em;
+		}
+	}
 }

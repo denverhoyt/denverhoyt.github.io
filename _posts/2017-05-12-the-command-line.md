@@ -2,7 +2,7 @@
 layout: post
 title:  "> The Command Line"
 description: "A quick guide to understanding working on the command line (especially for OSX)"
-author: Brent Schneider
+author: Denver Hoyt
 date:   2017-05-12 00:40:55 -0500
 categories: Terminal
 masthead: 'masthead.jpg'
@@ -12,16 +12,16 @@ masthead: 'masthead.jpg'
 
 1.  [Summary](#summary)
 2.  [iTerm2](#iterm2)
-    1.  [Hotkeys](#basic-terminal-hotkeys)
-    2.  [Custom settings](#custom-settings)
-    3.  [iterm2 shortcuts](#cool-iterm2-shortcuts)
+    -   [Hotkeys](#basic-terminal-hotkeys)
+    -   [Custom settings](#custom-settings)
+    -   [iterm2 shortcuts](#cool-iterm2-shortcuts)
 3.  [Shell Prompt](#shell-prompt)
 4.  [shells and configuration](#shells-and-configuration)
-    1.  [zsh (z shell)](#zsh-z-shell)
-    2.  [oh my zsh](#oh-my-zsh)
-    3.  [.zsrch file](#default-zsrch-file)
-    4.  [syntax highlighting](#syntax-highlighting)
-    5.  [oh my zsh tips and tricks](#oh-my-zsh-tips-and-tricks)
+    -   [zsh (z shell)](#zsh-z-shell)
+    -   [oh my zsh](#oh-my-zsh)
+    -   [.zsrch file](#default-zsrch-file)
+    -   [syntax highlighting](#syntax-highlighting)
+    -   [oh my zsh tips and tricks](#oh-my-zsh-tips-and-tricks)
 5.  [brew](#brew)
 
 ## Summary

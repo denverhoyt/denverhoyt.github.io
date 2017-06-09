@@ -1,24 +1,23 @@
-/* Format all Inline elements to a width */
-/* start with container */
-/* Use a standard gutter of 140 gutter on each side */
-header {
-	text-align: center;
-	padding: 9em 1.2em;
-	color: $white;
+body {
+	background-color: $white;
 
-	div {
-		max-width: 37em;
-		margin: 0 auto;
+	.site {
+		display: block;
+		margin: 2em auto 0;
+		width: 6em;
+		color: $white;
 
-		span {
-			color: darken($grey, 12%);
-			padding-bottom: 1em;
-			border-bottom: 5px solid rgba(255,255,255,.3);
+		&:hover {
+			svg {
+				fill: $blue;
+			}
 		}
 
-		p {
-			margin-top: 1em;
-			color: $grey;
+		&:active,
+		&:hover {
+			svg {
+				fill: $blue;
+			}
 		}
 	}
 }
@@ -36,69 +35,39 @@ a {
 	color: $blue;
 }
 
-blockquote {
-	border-left: 10px solid $grey;
-	padding-left: 16px;
-	margin-left: -20px;
-}
+/*
+	Home
+ */
 
-figure {
-	text-align: center;
-}
+.home {
+	.tldr {
+		text-align: center;
+	}
 
-figcaption {
-	padding: 0 1.5em;
-}
+	/* Services */
+	main > ul {
+		padding-left: 0;
+		list-style: none;
 
-.float-left {
-	margin: .5em auto;
-}
+		> li {
+			h3 {}
 
-.float-right {
-	float: right;
-	margin: .5em 0 0 1.5em;
-}
+			ul {
+				list-style: disc;
+				padding-left: 1.2em;
 
-.pull-left {
-	margin: .5em 0;
-}
-
-.pull-right {
-	float: right;
-	margin: .5em -140px 0 1.5em;
-}
-
-.pull-both {
-	// margin: .5em -140px 0;
-	margin: .5em -1.2em 0;
-	border: 0;
-	text-align: center;
-}
-
-code {
-	background-color: lighten($grey, 15%);
-	padding: 0 .3em;
-}
-
-pre {
-	overflow: scroll;
-	background-color: $black;
-	margin: 1.5em -1.3em 1em;
-
-	code {
-		color: $white;
-		background-color: transparent;
+				li {
+					font-size: .9em;
+				}
+			}
+		}
 	}
 }
 
-footer {
-	border-top: 5px solid $grey;
-	padding-top: 2em;
-	margin: 2em auto 4em;
-}
-// List page
-
-main {
+/*
+	Post List
+*/
+.posts {
 	ol {
 		padding-left: 0;
 		list-style: none;
@@ -107,6 +76,102 @@ main {
 			h2 {
 				a {}
 			}
+		}
+	}
+}
+
+/*
+	Single Post
+*/
+.post {
+	header {
+		text-align: center;
+		padding: 9em 1.2em;
+		color: $white;
+
+		div {
+			max-width: 37em;
+			margin: 0 auto;
+
+			span {
+				color: darken($grey, 12%);
+				padding-bottom: 1em;
+				border-bottom: .2em solid rgba(255, 255, 255, .3);
+			}
+
+			p {
+				margin-top: 1em;
+				color: $grey;
+			}
+		}
+
+		.site {
+			width: 3em;
+			position: absolute;
+			top: -1.2em;
+			left: .7em;
+
+			svg {
+				fill: $white;
+			}
+
+			&:hover {
+				svg {
+					fill: $blue;
+				}
+			}
+		}
+
+		.reading-time {
+			background-color: rgba(255, 255, 255, .7);
+			color: $black;
+			display: inline;
+			padding: .3em .5em;
+			font-size: .9em;
+
+			span {
+				border-bottom: 0;
+				color: $black;
+				font-weight: bold;
+			}
+		}
+	}
+
+	blockquote {
+		border-left: 10px solid $grey;
+		padding-left: 16px;
+		margin-left: -20px;
+	}
+
+	figure {
+		padding: 0;
+		margin: .5em 0 1.5em;
+		text-align: center;
+		border-radius: 1em;
+
+		figcaption {
+			padding: .6em 1.5em .8em;
+			color: $black;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+
+	code {
+		background-color: lighten($grey, 15%);
+		padding: 0 .3em;
+	}
+
+	pre {
+		overflow: scroll;
+		background-color: $black;
+		margin: 1.5em -1.3em 1em;
+
+		code {
+			color: $white;
+			background-color: transparent;
 		}
 	}
 }

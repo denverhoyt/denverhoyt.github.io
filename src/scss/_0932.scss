@@ -9,69 +9,80 @@ header {
 	}
 }
 
-article,
-footer,
-main {}
+.home {
+	/* Services */
+	main > ul {
+		> li {
+			h3 {}
 
-a {}
+			ul {
+				li {}
+			}
 
-blockquote {
-	border-left: 10px solid $grey;
-	padding-left: 16px;
-	margin-left: -28px;
+			&:nth-child(odd) {
+				}
+		}
+	}
 }
 
-figure {
-	text-align: center;
-}
+.post {
+	header {
+		text-align: left;
+	}
 
-figure.float-left {
-	float: left;
-	margin: .5em 1.5em 0 0;
-	max-width: 19em;
-}
+	blockquote {
+		border-left: 10px solid $grey;
+		padding-left: 16px;
+		margin-left: -28px;
+	}
 
-figure.float-right {
-	float: right;
-	margin: .5em 0 0 1.5em;
-	border: 0;
-	max-width: 19em;
-}
+	figure {
+		text-align: center;
+	}
 
-figure.pull-left {
-	float: left;
-	margin: .5em 1.5em 0 -140px;
-	border: 0;
-	max-width: 26em;
-}
+	.float-left {
+		float: left;
+		margin: .5em 1.5em 0 0;
+		max-width: 19em;
+	}
 
-figure.pull-right {
-	float: right;
-	margin: .5em -140px 0 1.5em;
-	border: 0;
-	max-width: 26em;
-}
+	.float-right {
+		float: right;
+		margin: .5em 0 0 1.5em;
+		max-width: 19em;
+	}
 
-blockquote.pull-both,
-figure.pull-both {
-	margin: .5em -140px 0;
-	border: 0;
-	text-align: center;
-}
+	.pull-left {
+		float: left;
+		margin: .5em 1.5em 0 -140px;
+		max-width: 26em;
+	}
 
-code {
-	background-color: lighten($grey, 15%);
-	padding: 0 .3em;
-}
+	.pull-right {
+		float: right;
+		margin: .5em -140px 0 1.5em;
+		max-width: 26em;
+	}
 
-pre {
-	margin: 2em -140px;
-	overflow: scroll;
-	background-color: $black;
+	.pull-both,
+	.pull-both {
+		margin: .5em -140px 1.5em;
+	}
 
 	code {
-		font-size: 100%;
-		color: $white;
-		background-color: transparent;
+		background-color: lighten($grey, 15%);
+		padding: 0 .3em;
+	}
+
+	pre {
+		margin: 2em -140px;
+		overflow: scroll;
+		background-color: $black;
+
+		code {
+			font-size: 100%;
+			color: $white;
+			background-color: transparent;
+		}
 	}
 }

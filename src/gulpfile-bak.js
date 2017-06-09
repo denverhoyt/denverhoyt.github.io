@@ -26,7 +26,7 @@ var sassSources = [
  */
 gulp.task('jekyll-build', function (done) {
   browserSync.notify(messages.jekyllBuild)
-  return cp.spawn(jekyll, ['build'], {
+  return cp.spawn(npm, ['start'], {
       stdio: 'inherit'
     })
     .on('close', done)

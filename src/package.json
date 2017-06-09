@@ -6,6 +6,9 @@
     "repository": "https://github.com/HoytDenver/puddletowndesign.github.io",
     "author": "Hoyt <hoytdenver@gmail.com>",
     "license": "COPYRIGHT",
+    "scripts": {
+        "start": "jekyll build -s ../ -d ../_site/ --incremental"
+    },
     "devDependencies": {
         "babel-core": "latest",
         "babel-loader": "latest",
@@ -23,13 +26,14 @@
         "gulp-sass": "latest",
         "gulp-sourcemaps": "latest",
         "gulp-util": "latest",
+        "gulp-rename": "latest",
+        "gulp-uglify": "latest",
+        "vinyl-buffer": "latest",
         "mocha": "latest",
         "rimraf": "latest",
         "vinyl-source-stream": "latest"
     },
     "dependencies": {
-        "gulp-rename": "^1.2.2",
-        "gulp-uglify": "^3.0.0",
-        "vinyl-buffer": "^1.0.0"
+        "jquery": "^3.2.1"
     }
 }
