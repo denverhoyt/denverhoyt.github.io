@@ -6,6 +6,7 @@ author: Denver Hoyt
 date:   2017-06-02 10:17:00 -0500
 categories: Opinion, San Francisco, Travel
 masthead: 'masthead.jpg'
+thumbnail: 'skyline.jpg'
 ---
 
 ## The jewel box
