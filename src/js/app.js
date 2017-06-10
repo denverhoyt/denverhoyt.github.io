@@ -1,10 +1,17 @@
+/*  global $, readingTime, fancybox */
 import $ from 'jquery'
 import readingTime from './readingTime'
 
 ;(() => {
   'use strict'
 
-  /*  global $ */
+	/**
+	 * Fancybox
+	 */
+
+	/**
+	 * Reading Time
+	 */
   var $article = $('article')
 
   $('header div').append('<div class="reading-time">about a <span class="eta"></span> read | <span class="count"></span> words</div>')
